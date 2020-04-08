@@ -18,8 +18,9 @@ namespace WDSMVC.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string message)
         {
+            ViewBag.Message = message;
             return View();
         }
 
